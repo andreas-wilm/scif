@@ -8,7 +8,12 @@
 		  Vienna RNA package
 */
 
-#include <config.h>
+
+/** AW which replaces config.h */
+ /* only for gcc */
+ #define UNUSED __attribute__ ((unused))
+
+
 
 #include <stdio.h>
 #include <stdlib.h>

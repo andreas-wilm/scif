@@ -27,7 +27,7 @@
 #include <getopt.h>
 
 #include <squid.h>
-#include "AliFold/alifold.h"
+#include "alifold.h"
 #include "fold.h"
 
 

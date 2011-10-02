@@ -8,15 +8,13 @@ http://www.biophys.uni-duesseldorf.de/bralibase/
 (http://www.ncbi.nlm.nih.gov/pubmed/17062125)
 
 
-Requirements
-============
-
-* squid: http://selab.janelia.org/software/squid/squid.tar.gz
-* vienna rna package:  http://www.tbi.univie.ac.at/RNA/
-
-
 Compilation
 ===========
+
+Make sure you have squid and ViennaRNA installed:
+
+* squid: http://selab.janelia.org/software/squid/squid.tar.gz
+* ViennaRNA package:  http://www.tbi.univie.ac.at/RNA/
 
 In theory just typing
 $ make
@@ -26,11 +24,12 @@ Depending on your vienna rna and squid installation directories you might
 want to set LDFLAGS and CFLAGS. For example if you've installed all
 your libraries to $HOME/local then try:
 
-$ env CFLAGS=-I$HOME/local/include LDFLAGS=-L$HOME/local/lib/ make
+$ env CFLAGS=-I$HOME/local/include/ViennaRNA LDFLAGS=-L$HOME/local/lib/ make
 
 
-Development
-===========
+NOTE
+====
 
-This code hasn't been changed since 2006. 
-alifold.c and vienna-rna-include might need an update
+This code hasn't been changed substantially since 2006 and might not
+work with newer versions of ViennaRNA
+
