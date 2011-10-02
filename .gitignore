@@ -1,0 +1,6 @@
+scif
+
+# backup files
+*~
+# os x stuff
+*.dSYM
