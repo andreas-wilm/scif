@@ -1,8 +1,36 @@
-Computes the Structure Conservation Index (SCI) of an alignment.
-The SCI was proposed in http://www.ncbi.nlm.nih.gov/pubmed/15665081
+Computes the Structure Conservation Index (SCI) of an RNA alignment.
 
-This source was originally published on http://www.biophys.uni-duesseldorf.de/bralibase/
-(ref: http://www.ncbi.nlm.nih.gov/pubmed/17062125)
+The SCI was originally proposed in
+http://www.ncbi.nlm.nih.gov/pubmed/15665081
+
+This source was originally published on
+http://www.biophys.uni-duesseldorf.de/bralibase/
+(http://www.ncbi.nlm.nih.gov/pubmed/17062125)
 
 
-Requires squid http://selab.janelia.org/software/squid/squid.tar.gz
+Requirements
+============
+
+* squid: http://selab.janelia.org/software/squid/squid.tar.gz
+* vienna rna package:  http://www.tbi.univie.ac.at/RNA/
+
+
+Compilation
+===========
+
+In theory just typing
+$ make
+should work
+
+Depending on your vienna rna and squid installation directories you might
+want to set LDFLAGS and CFLAGS. For example if you've installed all
+your libraries to $HOME/local then try:
+
+$ env CFLAGS=-I$HOME/local/include LDFLAGS=-L$HOME/local/lib/ make
+
+
+Development
+===========
+
+This code hasn't been changed since 2006. 
+alifold.c and vienna-rna-include might need an update
