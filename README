@@ -1,0 +1,8 @@
+Computes the Structure Conservation Index (SCI) of an alignment.
+The SCI was proposed in http://www.ncbi.nlm.nih.gov/pubmed/15665081
+
+This source was originally published on http://www.biophys.uni-duesseldorf.de/bralibase/
+(ref: http://www.ncbi.nlm.nih.gov/pubmed/17062125)
+
+
+Requires squid http://selab.janelia.org/software/squid/squid.tar.gz
