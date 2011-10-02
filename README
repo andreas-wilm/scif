@@ -30,6 +30,7 @@ $ env CFLAGS=-I$HOME/local/include/ViennaRNA LDFLAGS=-L$HOME/local/lib/ make
 NOTE
 ====
 
-This code hasn't been changed substantially since 2006 and might not
-work with newer versions of ViennaRNA
+The only substantial code changes since 2006 were the removal of
+included vienna-rna files and the update of alifold.c to ViennaRNA
+version 1.8.4.
 
